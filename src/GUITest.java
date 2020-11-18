@@ -1,4 +1,6 @@
 import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -23,6 +25,13 @@ public class GUITest {
 		JButton b2 = new JButton("at goats");
 		JButton b52 = new JButton("at code monkeys");
 		JButton dontPushMe = new JButton("my finger is on button");
+		
+		b1.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				System.out.println("Stop staring!");	
+			}			
+		});
 		
 		frame.add(b1);
 		frame.add(b2);
