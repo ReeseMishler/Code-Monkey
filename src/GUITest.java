@@ -2,7 +2,7 @@
 public class GUITest {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// so far, all of our programs were sequential
 
 	}
 
