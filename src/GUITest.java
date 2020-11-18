@@ -1,3 +1,5 @@
+import java.awt.FlowLayout;
+
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
@@ -13,11 +15,21 @@ public class GUITest {
 		frame.setSize(WIDTH, HEIGHT);
 		frame.setLocationRelativeTo(null); //Nothing it will be relative to
 		
+		//frame.setVisible(true);
+		
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		FlowLayout layout = new FlowLayout();
+		frame.setLayout(layout);
+		
 		JButton b1 = new JButton("Man who stare");
 		JButton b2 = new JButton("at goats");
 		JButton b52 = new JButton("at code monkeys");
 		
+		frame.add(b1);
+		frame.add(b2);
+		frame.add(b52);
 		
+		frame.pack();
 
 	}
 
